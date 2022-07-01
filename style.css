@@ -1,0 +1,145 @@
+*{
+ margin: 0;
+ padding: 0;  
+}
+
+body{
+    background: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
+}
+
+.menu_marcado{
+    background-color: white;
+    color: black;
+}
+
+.encabezado_nav{
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    text-decoration: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+ .encabezado_nav a{
+    text-decoration: none;    
+} 
+
+.encabezado_menu_item{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 8px;
+    margin: 16px;
+}
+
+.encabezado_menu_item a{
+    list-style: none;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: none;
+    color: white;
+}
+.bienvenidos{
+    font-size: 20px;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+}
+.div_nosotros{
+    padding: 16px;
+    margin: auto;
+    height: 100px;
+}
+
+.logo_bienvenidos{
+    width: 15%;
+    height: 15%;
+}
+.bienvenidos_titulo{
+    font-size: 100%;
+    padding: 16px 16px 16px 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bienvenidos_titulo_parrafo{
+    font-size: 20px;
+    width: fit-content;
+    height: 35%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    padding: 10px;
+    margin: 0;
+}
+.seccionContacto section{
+    height: 500px;
+
+}
+
+.productos{
+    width: fit-content;
+    margin: 30px;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.productos div{
+    width: fit-content;
+    display: inline-block;
+    padding: 16px;
+    color: white;
+}
+.productos img{
+    width: 400px;
+    height: 400px;
+}
+
+.productos h3{
+    border: 1px solid orange;
+    padding: 5px 1px 5px 5px;
+    font-family: sans-serif;
+}
+
+.footer{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}  
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer_nosotros{
+    background-color:white;
+    width: 100%;
+    list-style: none;
+    margin-bottom:0;
+    padding: auto;
+
+}
+
+.footer_nosotros_ul{
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+}
+.footer_div1 span{
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 950px;
+}
+
+.logos_footer{
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;    
+}
