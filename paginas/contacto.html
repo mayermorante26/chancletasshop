@@ -23,39 +23,51 @@
     <main class="seccionContacto">
         <section>
             <h2> CONTACTANOS </h2>
-            <form>
-                <div>
-                    <label for="name">Nombre Completo:</label>
-                    <input type="name" placeholder="Nombre completo"></div>
-                <div>
+            <form class="contacto_forma">
+                <div class="espacio_items">
+                    <label for="name" >Nombre Completo:</label>
+                    <input class="forma_label" type="name" placeholder="Nombre completo">
+                </div>
+                <div class="espacio_items">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="email">
+                    <input class="forma_label" type="email" id="email" placeholder="email">
                 </div>
-                <div>
+                <div class="espacio_items">
                     <label for="mensaje">Dejanos tu mensaje:</label>
-                    <input type="text" id="mensaje">
+                    <input class="forma_label" type="text" id="mensaje">
                 </div>
-                <input type="radio" id="masculino" name="genero">
-                <label for="masculino">Hombre</label>
-                <input type="radio" id="femenino" name="genero">
-                <label for="femenino">Mujer</label>
-                <input type="radio" id="otro" name="genero">
-                <label for="otro">Otro</label>
+                <div class="espacio_items" >
+                    <input type="radio" id="masculino" name="genero">
+                    <label for="masculino">Hombre</label>
+                    <input type="radio" id="femenino" name="genero">
+                    <label for="femenino">Mujer</label>
+                    <input type="radio" id="otro" name="genero">
+                    <label for="otro">Otro</label>
+                </div>               
     
-    
-                <input type="submit">
-                <input type="reset">
+                <div class="espacio_items">
+                    <input class="forma_label"type="submit">
+                    <input class="forma_label" type="reset">
+                </div>
+                
             </form>
     </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer_contactanos">
         <div >
           <span> &#169; Chancletas Shop </span>
          </div>
               <div>
                   <ul>
+                    <h4> Contacto Ventas:</h4>
+                      <li class="logos_footer">
+                          <a href="https://wa.me/c/5491164411029" target="_blank">
+                          <img src="../imagenes/logowhatsapp.png" alt="Whatsapp">
+                          </a>
+                      </li>
+
                       <h4> Redes Sociales:</h4>
                       <li class="logos_footer">
                           <a href="https://www.facebook.com/Chancletas-Shop-106619442003523" target="_blank"> 
@@ -65,13 +77,6 @@
                       <li class="logos_footer">
                           <a href="https://www.instagram.com/chancletasshop/" target="_blank"> 
                           <img src="../imagenes/logoinstagram.png" alt="Instagram">
-                          </a>
-                      </li>
-
-                      <h4> Contacto Ventas:</h4>
-                      <li class="logos_footer">
-                          <a href="https://wa.me/c/5491164411029" target="_blank">
-                          <img src="../imagenes/logowhatsapp.png" alt="Whatsapp">
                           </a>
                       </li>
                   </ul>
