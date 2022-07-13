@@ -58,6 +58,8 @@ body{
     box-shadow: none;
     color: white;
 }
+
+
 .bienvenidos{
     font-size: 20px;
     width: 100%;
@@ -335,9 +337,10 @@ height: 650px;
 
 }
 .seccion_categoria img{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border: 3px solid orange;
+    border-radius: 10px;
 }
 
 .seccion_categoria_item{
@@ -347,7 +350,12 @@ height: 650px;
     height: 80px;
     display: inline-block;
     align-items: center;
-}
+    }
+
+    .seccion_categoria_item img:hover{
+        transform: scale(1.5);
+        transition: all 2s;
+    }
 
 .seccion_categoria_item h3{
     display: flex;
