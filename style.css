@@ -103,6 +103,17 @@ height: 650px;
 .seccionContacto h2{
     font-size: 40px;
 }
+.mb-3{
+    display: grid;
+    width: 50%;
+    align-items: center;
+    align-content: center;
+}
+.form-select{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
 .seccion_ubicacion{
     margin:30px 10px;
 }
@@ -118,7 +129,13 @@ height: 650px;
 .mapa{
    margin: 50px 30px;
 }
-
+.btn{
+    background-color: white;
+    color: black;
+}
+.formulario_boopstrap{
+    margin-left: 10px;
+}
 
 .ajuste_pantalla{
     width: 100%;
@@ -452,6 +469,14 @@ font-size: 30px;
     display: inline-block;
     flex-direction: row;
     justify-content: space-between;
+}
+.footer_div1 h4{
+    font-size: 15px;  
+}
+
+.footer_contactanos h4{
+    font-size: 15px;  
+    font-weight: bold;
 }
 .footer_div1 span{
     flex-direction: row;
