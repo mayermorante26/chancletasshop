@@ -7,58 +7,46 @@ body{
     background: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
     width: auto;
 }
-
-.encabezado_nav{
-    background-color: black;
-    width: 100%;
-    height: fit-content;
-    text-decoration: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.logo_nav{
+    height: 80px;
 }
-.encabezado_nav_home{
-    background-color: black;
-    width: 100%;
-    height: fit-content;
-    text-decoration: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.encabezado_nav_home a{
-    text-decoration: none;
-}
-
- .encabezado_nav a{
-    text-decoration: none;    
-} 
-
-.encabezado_nav img{
-    height: 100px;
-} 
-
-.encabezado_nav_home img{
-    height: 100px  
-} 
-
-
-.encabezado_menu_item{
-    display: inline-block;
+.nav-link{
     border: 1px solid white;
-    padding: 8px;
-    margin: 16px;
+    margin: 15px;
+    padding: 5px 12px;
     border-radius: 20px;
 }
-
-.encabezado_menu_item a{
-    list-style: none;
-    text-decoration: none;
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    box-shadow: none;
+    font-size: 20px;
+}   
+
+.dropdown-menu{
+    background-color: black;
+}
+.dropdown-menu a{
     color: white;
 }
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+.navbar navbar-expand-lg {
+    width: 100%;
+}
 
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: initial;
+    align-items: center;
+}
+.nav-link:hover {
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
 
 .bienvenidos{
     font-size: 20px;
