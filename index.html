@@ -11,7 +11,7 @@
 
 <body>
     <header class="header_index">
-        
+        <!-- Nav Con Boopstrap -->
         <nav class="navbar navbar-expand-lg navbar-black bg-black">
             <div class="container-fluid">
                     <a href="./index.html">
@@ -50,7 +50,7 @@
               </div>
             </div>
           </nav>
-       
+       <!-- Nav Con Boopstrap -->
     </header>
     <main class="ajuste_pantalla">
     <section>
@@ -59,28 +59,32 @@
             <p class="bienvenidos_titulo_parrafo">Somos una tienda online de ojotas, sandalias, suecos, pantuflas y mas; que trabaja para brindar productos de calidad al mejor precio. </p>
         </div>
                 
-        </section>
-           
-        <section class="productos">
-           <div class="producto_categorias">
-                <h2>DAMAS</h2>
-                <img src="./imagenes/seccionmujer.jpg">
-                <a href="./paginas/productosDamas.html"> <h3> VER PRODUCTOS</h3> </a>
-            </div>
-            
-            <div class="producto_categorias">
-                <h2>CABALLEROS</h2>
-                <img src="./imagenes/seccionhombres.jpg">
-                <a href="./paginas/productosHombres.html"> <h3> VER PRODUCTOS</h3> </a>
-            </div>
-
-            <div class="producto_categorias">
-                <h2>NIÑOS</h2>
-                <img src="./imagenes/seccionninos.jpg">
-                <a href="./paginas/productosNinios.html"> <h3> VER PRODUCTOS</h3> </a>
-            </div>
-            
-        </section>
+    </section>
+    <section class="productos_container container">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+                <div class="card" style="width: 18rem">
+                    <h5 class="card-title">DAMAS</h5>
+                    <img class="productos_container_img" src="./imagenes/seccionmujer.jpg" class="card-img-top" alt="...">
+                     <div class="card-body">
+                        <a href="./paginas/productosDamas.html" class="btn">Ver Catalogo</a>
+                    </div>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <h5 class="card-title">CABALLEROS</h5>
+                        <img class="productos_container_img" src="./imagenes/seccionhombres.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="./paginas/productosHombres.html" class="btn">Ver Catalogo</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <h5 class="card-title">NIÑOS</h5>
+                        <img class="productos_container_img" src="./imagenes/seccionninos.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="./paginas/productosNinios.html" class="btn">Ver Catalogo</a>
+                        </div>
+                    </div>
+                </div>     
+    </section>
     </main>
     <footer class="footer">
         
