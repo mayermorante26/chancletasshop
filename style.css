@@ -86,12 +86,70 @@ height: 650px;
 .seccionContacto h2{
     font-size: 40px;
 }
+.nosotros h2{
+    color: white;
+}
 .mb-3{
     display: grid;
     width: 50%;
     align-items: center;
     align-content: center;
 }
+.mb-3 {
+   animation-name: animacion_formulario;
+   animation-duration: 2s;
+   
+}
+.form-select{
+    animation-name: animacion_formulario;
+    animation-duration: 1s;
+    
+}
+
+@keyframes animacion_formulario {
+    from {
+        margin-right: 100%;
+        width: 100%;
+      }
+
+      to {
+        margin-left: 30%;
+        width: 100%;
+      }
+ }
+
+.div_nosotros_chancletas p{
+  
+    animation-duration: 3s;
+    animation-name: animacion_nosotros;
+}   
+
+.div_nosotros_inicio{
+  
+    animation-duration: 3s;
+    animation-name: animacion_nosotros;
+
+}   
+
+.division_nosotros_proposito{
+  
+    animation-duration: 3s;
+    animation-name: animacion_nosotros;
+} 
+
+@keyframes animacion_nosotros{
+    from {
+      margin-left: 100%;
+      width: 100%
+      
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } 
+
 .form-select{
     width: 30%;
     margin-bottom: 10px;
@@ -517,7 +575,7 @@ section {
 .div_nosotros{
    
     font-size: 20px;
-    height: 130%;   
+    height: 130%; 
 }
 
 .div_nosotros_chancletas{
