@@ -80,7 +80,7 @@ body{
 }
 
 .seccion_Ubicacion{
-height: 650px;
+height: 800px;
 }
 
 .seccionContacto h2{
@@ -175,9 +175,9 @@ height: 650px;
     color: black;
 }
 
-
 .ajuste_pantalla{
     width: 100%;
+    height: 700px;
 }
 
 .productos h3:hover{
@@ -393,6 +393,7 @@ height: 650px;
     }
 }
 /* FINAL MEDIA QUERY */
+
 .row{   
     margin: 5px;
     margin-bottom: 20px;
@@ -534,7 +535,7 @@ section {
 
     text-align: bottom;
     display: grid;
-    height: 350px;    
+    height: 10px;    
     display: inline-block;
     align-items: center;
     }
