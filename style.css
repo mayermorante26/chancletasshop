@@ -647,7 +647,7 @@ font-size: 30px;
 
 .logos_footer{
     list-style: none;
-    display: inline-block;
+
     padding: 16px;
     display: flex;
     flex-direction: row;
