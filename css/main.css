@@ -192,14 +192,16 @@ div.card {
     justify-content: left;
     margin-left: 0px;
     padding-top: 0px;
-    margin-right: 0px; }
+    margin-right: 0px;
+   }
 
 .footer__div {
   margin-left: 0%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap; 
+}
 
 .footer_ul {
   list-style: none;
