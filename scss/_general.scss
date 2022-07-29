@@ -1,5 +1,135 @@
-body{
-background: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
-width: auto;
-height: fit-content;
+.logo_nav{
+    height: 80px;
 }
+header{
+    height: 100px;
+}
+
+/* INICIO NAVEGADOR */
+nav.navbar-expand-lg.navbar-black.bg-black {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: -webkit-fill-available;
+}
+.navbar>.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}  
+
+.nav-link{
+    border: 1px solid white;
+    margin: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}   
+
+.dropdown-menu{
+    background-color: black;
+}
+.dropdown-menu a{
+    color: white;
+}
+.nav-item a{
+    color: white;
+    text-decoration: none;
+}
+.navbar navbar-expand-lg {
+    width: 100%;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: initial;
+    align-items: center;
+}
+.nav-link:hover {
+    color: white;
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+/* FIN NAVEGADOR */
+ /* BODY */
+
+body{
+background: map-get($colores, colorBody);
+width: auto;
+height: 100%;
+}
+
+section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+/* FIN BODY */
+
+/* FOOTER */
+footer{
+    background-color: map-get($colores, colorFooter);
+    width: 100%;
+    height: auto;
+    color: map-get($colores, textColorF);
+    display: flex;
+    list-style: none;   
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 100%;
+
+    span{
+        flex-direction: row;
+        color: white;
+        justify-content: left;
+        margin-left: 0px;
+        padding-top: 0px;
+        margin-right: 0px;
+        }
+
+    &__div{
+        margin-left: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        }
+
+    &_ul{
+        list-style: none;
+        padding: 0px 16px 0 16px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        li{
+            margin-top: 0;
+            padding: 0px 16px 0px 16px;
+            margin-bottom: 0;
+         }
+
+        h4{
+            font-size: 15px; 
+        }
+    }        
+}
+/* FIN FOOTER */

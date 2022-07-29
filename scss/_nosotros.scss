@@ -1,0 +1,79 @@
+.ajuste_pantalla_nos{
+    width: 100%;
+    height: fit-content;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: center;
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.div_nosotros_chancletas {
+    margin-top: 100px;
+    font-size: 20px;
+    height: 100%;
+    h2{
+        color: white;
+    }
+    
+}
+/* ANIMACIONES */
+
+.div_nosotros {
+    font-size: 20px;
+    height: 130%;
+    margin-bottom: 5px;
+}
+.nosotros h2 {
+    color: white;
+}
+
+.div_nosotros h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.div_nosotros_chancletas p{
+  
+    animation-duration: 2s;
+    animation-name: animacion_nosotros;
+}   
+
+.div_nosotros_inicio{
+  
+    animation-duration: 1.5s;
+    animation-name: animacion_nosotros;
+
+}   
+
+.division_nosotros_proposito{
+  
+    animation-duration: 2s;
+    animation-name: animacion_nosotros;
+} 
+
+@keyframes animacion_nosotros{
+    from {
+      margin-left: 100%;
+      width: 100%
+      
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } 
+/* FIN ANIMACIONES */

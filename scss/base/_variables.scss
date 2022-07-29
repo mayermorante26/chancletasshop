@@ -1,2 +1,8 @@
-$color-body: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
-$color-footer: black;
+/* $colorBody: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
+$colorFooter: black; */
+
+$colores:(
+    "colorBody": linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57)),
+    "colorFooter": black,
+    "textColorF": white
+);
