@@ -1,3 +1,7 @@
-@import 'paginainicio';
+@import "./base/variables";
+@import "paginainicio";
 @import 'general';
-@import './base/variables';
+@import 'nosotros';
+@import 'catalogo';
+@import 'contacto';
+@import 'ubicacion';
