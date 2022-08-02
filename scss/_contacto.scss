@@ -1,23 +1,20 @@
 .seccionContacto section{
-    height: 605px;
-    width: 100%;
+    @include ajustePantalla(100%, 605px);
 }
 .seccionContacto h2{
     font-size: 40px;
 }
 
 .mb-3{
-    display: grid;
+    @include displayAlign(grid, center);
     width: 50%;
-    align-items: center;
     align-content: center;
 }
 
 .form-select {
-    display: block;
-    align-items: center;
+    @include displayAlign(block, center);
     text-align: center;
-    width: 30%;
+    width: 35%;
     margin-bottom: 10px;
 }
 .btn{

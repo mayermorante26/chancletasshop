@@ -1,8 +1,19 @@
-/* $colorBody: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
-$colorFooter: black; */
 
 $colores:(
     "colorBody": linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57)),
     "colorFooter": black,
     "textColorF": white
 );
+/* Mixin */
+
+@mixin ajustePantalla($width, $height)
+{
+    width: $width;
+    height: $height;
+}
+
+@mixin displayAlign($display,$aling)
+{
+    display: $display;
+    align-items: $aling;
+}

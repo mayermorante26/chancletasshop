@@ -1,8 +1,7 @@
-/* $colorBody: linear-gradient(white, rgb(220, 100, 19), rgb(218, 57, 57));
-$colorFooter: black; */
+/* Mixin */
 .ajuste_pantalla {
   width: 100%;
-  height: 688px; }
+  height: 720px; }
 
 /* INICIO BODY */
 .bienvenidos {
@@ -13,21 +12,21 @@ $colorFooter: black; */
   text-align: center; }
   .bienvenidos_div {
     display: inline-block;
+    align-items: center;
     font-size: 100%;
     padding: 16px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 45px;
     justify-content: center;
-    align-items: center;
     text-align: center; }
     .bienvenidos_div h {
       display: flex;
+      align-items: center;
       font-size: 100%;
       padding: 16px 16px 16px 16px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 45px;
-      justify-content: center;
-      align-items: center; }
+      justify-content: center; }
 
 .bienvenidos_titulo {
   display: flex;
@@ -48,11 +47,10 @@ $colorFooter: black; */
   width: fit-content; }
 
 section.productos_container {
-  height: auto;
-  margin-bottom: 5%;
   display: grid;
-  justify-items: center;
   align-items: center;
+  height: auto;
+  justify-items: center;
   align-content: center; }
 
 .productos_container_img {
@@ -160,11 +158,11 @@ header {
 
 /* INICIO NAVEGADOR */
 nav.navbar-expand-lg.navbar-black.bg-black {
-  position: relative;
   display: flex;
+  align-items: center;
+  position: relative;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-  align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -172,8 +170,8 @@ nav.navbar-expand-lg.navbar-black.bg-black {
 
 .navbar > .container-fluid {
   display: flex;
-  flex-wrap: inherit;
   align-items: center;
+  flex-wrap: inherit;
   justify-content: space-between; }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -187,16 +185,10 @@ nav.navbar-expand-lg.navbar-black.bg-black {
   padding: 5px 12px;
   border-radius: 20px; }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px; }
-
 .dropdown-menu {
   background-color: black; }
-
-.dropdown-menu a {
-  color: white; }
+  .dropdown-menu a {
+    color: white; }
 
 .nav-item a {
   color: white;
@@ -218,23 +210,22 @@ nav.navbar-expand-lg.navbar-black.bg-black {
 
 /* FIN NAVEGADOR */
 /* BODY */
-body {
+main {
   background: linear-gradient(white, #dc6413, #da3939);
-  width: auto;
-  height: 100%; }
+  height: fit-content; }
 
 section {
   display: grid;
-  justify-items: center;
   align-items: center;
+  justify-items: center;
   align-content: center; }
 
 /* FIN BODY */
 /* FOOTER */
 footer {
-  background-color: black;
   width: 100%;
   height: auto;
+  background-color: black;
   color: white;
   display: flex;
   list-style: none;
@@ -295,23 +286,21 @@ body {
   height: 100%; }
   .div_nosotros_chancletas h2 {
     color: white; }
+  .div_nosotros_chancletas p {
+    animation-duration: 2s;
+    animation-name: animacion_nosotros; }
 
 /* ANIMACIONES */
 .div_nosotros {
   font-size: 20px;
   height: 130%;
   margin-bottom: 5px; }
+  .div_nosotros h2 {
+    font-size: 30px;
+    color: white; }
 
 .nosotros h2 {
   color: white; }
-
-.div_nosotros h2 {
-  font-size: 30px;
-  color: white; }
-
-.div_nosotros_chancletas p {
-  animation-duration: 2s;
-  animation-name: animacion_nosotros; }
 
 .div_nosotros_inicio {
   animation-duration: 1.5s;
@@ -345,29 +334,30 @@ body {
   padding-bottom: 0px; }
 
 .seccionContacto section {
-  height: 605px;
-  width: 100%; }
+  width: 100%;
+  height: 605px; }
 
 .seccionContacto h2 {
   font-size: 40px; }
 
 .mb-3 {
   display: grid;
-  width: 50%;
   align-items: center;
+  width: 50%;
   align-content: center; }
 
 .form-select {
   display: block;
   align-items: center;
   text-align: center;
-  width: 30%;
+  width: 35%;
   margin-bottom: 10px; }
 
 .btn {
   background-color: orangered; }
 
 .seccion_Ubicacion {
+  width: 100%;
   height: 605px;
   margin-top: 30px;
   margin-bottom: 0px;
@@ -380,3 +370,52 @@ body {
     margin-top: 25px;
     margin-left: 30px;
     font-size: 20px; }
+
+.height_catalogo_secciones {
+  width: 100%;
+  height: 1200px; }
+
+.seccion_categoria {
+  width: 100%;
+  height: 350px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  gap: 30px;
+  grid-auto-flow: dense;
+  grid-gap: 1rem;
+  justify-content: space-evenly; }
+  .seccion_categoria img {
+    width: 220px;
+    height: 220px;
+    border: 3px solid orange;
+    border-radius: 10px; }
+  .seccion_categoria div {
+    display: grid;
+    align-items: center;
+    text-align: bottom;
+    height: 10px;
+    display: inline-block; }
+    .seccion_categoria div h3 {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      justify-content: center;
+      font-size: 25px;
+      margin-bottom: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin-left: 10px; }
+
+.seccion_categoria_item img:hover {
+  transform: scale(1.5);
+  transition: all 2s; }
+
+.titulo_catalogo {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 16px 16px 16px 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }

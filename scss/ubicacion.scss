@@ -1,5 +1,5 @@
 .seccion_Ubicacion {
-    height: 605px;
+    @include ajustePantalla(100%, 605px);
     margin-top: 30px;
     margin-bottom: 0px;
     padding-bottom: 2px;
