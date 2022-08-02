@@ -1,6 +1,6 @@
 .ajuste_pantalla_nos{
-    width: 100%;
-    height: fit-content;
+
+   @include ajustePantalla(100%, fit-content);
     margin-left: 0px;
     margin-right: auto;
     margin-bottom: 0;
@@ -24,9 +24,15 @@ body {
     margin-top: 100px;
     font-size: 20px;
     height: 100%;
-    h2{
-        color: white;
-    }
+   
+        h2{
+            color: white;
+        }
+
+        p{
+            animation-duration: 2s;
+            animation-name: animacion_nosotros;
+        }   
     
 }
 /* ANIMACIONES */
@@ -35,45 +41,35 @@ body {
     font-size: 20px;
     height: 130%;
     margin-bottom: 5px;
+
+    h2{
+        font-size: 30px;
+        color: white;
+    }
 }
 .nosotros h2 {
     color: white;
 }
 
-.div_nosotros h2 {
-    font-size: 30px;
-    color: white;
-}
-
-.div_nosotros_chancletas p{
-  
-    animation-duration: 2s;
-    animation-name: animacion_nosotros;
-}   
-
 .div_nosotros_inicio{
-  
     animation-duration: 1.5s;
     animation-name: animacion_nosotros;
-
 }   
 
 .division_nosotros_proposito{
-  
     animation-duration: 2s;
     animation-name: animacion_nosotros;
 } 
 
 @keyframes animacion_nosotros{
-    from {
-      margin-left: 100%;
-      width: 100%
-      
-    }
+        from {
+            margin-left: 100%;
+            width: 100%
+        }
   
-    to {
-      margin-left: 0%;
-      width: 100%;
+        to {
+            margin-left: 0%;
+            width: 100%;
     }
   } 
 /* FIN ANIMACIONES */
