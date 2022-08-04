@@ -247,7 +247,7 @@ footer {
     flex-wrap: nowrap; }
   footer ul {
     list-style: none;
-    padding: 0px;
+    padding: 0px 16px 0 16px;
     margin-top: 5px;
     display: flex;
     flex-direction: row;
@@ -421,6 +421,82 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 @media screen and (max-width: 320px) {
+  /* header nav */
+  header {
+    height: auto; }
+  nav.navbar-expand-lg.navbar-black.bg-black {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0;
+    margin-top: -35px;
+    padding-bottom: 0.5rem;
+    height: -webkit-fill-available; }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    align-items: center;
+    text-align: center; }
+  .navbar-nav .dropdown-menu:focus .navbar-nav .dropdown-menu:hover {
+    background-color: orange;
+    color: white; }
+  .dropdown-item .nav_menu li a {
+    background-color: orange; }
+  .dropdown-menu li a {
+    color: white;
+    font-weight: bolder;
+    background-color: #ff5e00f0;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 60%;
+    margin: 5px auto; }
+  /* index main */
+  .ajuste_pantalla {
+    width: 100%;
+    height: auto;
+    font-size: 8%;
+    justify-items: auto;
+    align-items: center; }
+  .bienvenidos_titulo_parrafo {
+    margin-bottom: 0px;
+    font-size: 50%;
+    font-weight: bold; }
+  .bienvenidos_titulo {
+    display: flex;
+    padding: 16px 16px 16px 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70%;
+    justify-content: center; }
+  .productos_container_img {
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    padding: 0; }
+  div.card {
+    margin: 2px auto 5px auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: black;
+    color: white;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    align-items: center; }
+  section.productos_container {
+    display: grid;
+    align-items: center;
+    height: auto;
+    justify-items: center;
+    align-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  /* fin index main */
+  /* Fin header nav */
   .mb-3 input {
     font-size: 40%; }
   .seccionContacto section {
@@ -434,7 +510,7 @@ body {
   .seccion_nosotros {
     height: 1200px;
     width: 100%; }
-  .h4, h4 {
+  .h4 {
     font-size: 50%; }
   .navbar-toggler-icon {
     color: white;
@@ -461,12 +537,6 @@ body {
     border: 1px solid white;
     padding: 2px;
     margin: 8px; }
-  .ajuste_pantalla {
-    width: 100%;
-    height: 1500px;
-    font-size: 8%;
-    justify-items: auto;
-    align-items: center; }
   .productos {
     display: flex;
     flex-direction: column;
@@ -487,7 +557,8 @@ body {
   .producto_categorias h2 {
     font-size: 20px;
     margin: auto; }
-  footer {
+  /* footer */
+  .footer {
     width: auto;
     height: auto;
     background-color: black;
@@ -497,37 +568,46 @@ body {
     flex-direction: row;
     justify-content: space-between;
     font-size: 2px; }
-    footer span {
+    .footer span {
       flex-direction: row;
       color: white;
       justify-content: left;
       margin-left: 0px;
       padding-top: 0px;
       margin-right: 0px;
-      font-size: 5px; }
-    footer div {
+      font-size: 8px; }
+    .footer div {
       margin: 0%;
       display: flex;
       flex-direction: row;
+      align-items: flex-end;
       justify-content: space-evenly;
       flex-wrap: nowrap;
       padding: 0px;
       width: 100%; }
-    footer ul {
+    .footer ul {
       list-style: none;
-      padding: 0px;
+      padding: 5px 0px;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      margin: 0px; }
-      footer ul li {
+      margin: 0px;
+      width: 100%; }
+      .footer ul li {
         margin-top: 0;
         padding: 0px;
         margin-bottom: 0;
         height: 5%;
-        font-size: 30%; }
-      footer ul h4 {
-        font-size: 5px; }
-      footer ul img {
+        font-size: 30%;
+        margin-right: 0;
+        margin-left: -8px; }
+      .footer ul h4 {
+        font-size: 10px;
+        padding: 0px;
+        margin: 1px; }
+      .footer ul img {
         height: 20px;
-        width: 20px; } }
+        width: 20px; }
+  .font_h4 {
+    font-size: 3px; }
+  /* final footer */ }
