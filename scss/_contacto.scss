@@ -1,11 +1,12 @@
-.seccionContacto section{
+.seccionContacto section {
     @include ajustePantalla(100%, 605px);
 }
-.seccionContacto h2{
+
+.seccionContacto h2 {
     font-size: 40px;
 }
 
-.mb-3{
+.mb-3 {
     @include displayAlign(grid, center);
     width: 50%;
     align-content: center;
@@ -17,6 +18,7 @@
     width: 35%;
     margin-bottom: 10px;
 }
-.btn{
+
+.btn {
     background-color: orangered;
 }
