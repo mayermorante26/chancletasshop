@@ -134,264 +134,247 @@
     .height_catalogo_secciones {
         height: fit-content;
     }
+    
+        .seccion_categoria{
+            width: 100%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 200px 200px 200px 200px;
+            gap: 100px 0px;
+            justify-content: center;
+            margin-top: 100px;
+            
+            div{
+               
+    
+                    align-items: center;
+                    text-align: bottom;
+                    height: 100%;
+                    padding-top: 10px;
+                    justify-content: center;
+                    padding-top: 50px;
+                    margin-bottom: 100%;
+                    width: 100%;
 
-    .seccion_categoria {
+            h3 {
+                display: flex;
+                align-items: center;
+                width: auto;
+                text-align: center;
+                justify-content: center;
+                font-size: 120%;
+                margin-bottom: 30px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /* Fin catalogo-main */
+
+    .mb-3 {
+        input {
+            font-size: 40%;
+        }
+    }
+
+    .seccionContacto section {
+        height: 700px;
         width: 100%;
+    }
+
+    .seccionContacto h2 {
+        font-size: 150%;
+        margin-top: 0%;
+        padding-top: none;
+        padding-bottom: 25px;
+    }
+
+    .seccion_nosotros {
+        height: 1200px;
+        width: 100%;
+    }
+
+    .h4 {
+        font-size: 50%;
+    }
+
+
+    .form-select {
+        display: block;
+        align-items: center;
+        text-align: center;
+        font-size: 60%;
+    }
+
+    .encabezado_menu_item {
+        display: inline-block;
+        border: 1px solid white;
+        padding: 2px;
+        margin: 8px;
+    }
+
+    .productos {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        justify-items: center;
+        align-content: space-between;
+        height: auto;
+    }
+
+    .producto_categorias img {
+        width: 10px;
+        height: 20px;
+        justify-items: left;
+        justify-content: left;
+        margin: 10px;
+        padding: 0%;
+    }
+
+    .producto_categorias h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .producto_categorias h2 {
+        font-size: 20px;
+        margin: auto;
+    }
+
+    .ajuste_pantalla_nos {
         height: fit-content;
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 200px 200px 200px 200px;
-        gap: 100px 0px;
-        justify-content: center;
-        margin-top: 100px;
+        width: 100%;
+    }
+
+    /* ubicacion */
+    .mapa iframe {
+        height: 350px;
+        width: fit-content
+    }
+
+    .seccion_ubicacion {
+        h3 {
+            margin: 10px auto 20px auto;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+        }
+
+        p {
+            margin: 10px auto 20px auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 100%;
+            font-weight: bolder;
+        }
+    }
+
+    /* FIN UBICACION */
+
+    /* nosotros */
+    .div_nosotros_chancletas {
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        height: 100%;
+
+        h2 {
+            color: black;
+            font-size: 30px;
+        }
+    }
+
+    .div_nosotros {
+
+        font-size: 20px;
+        height: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        h2 {
+            font-size: 30px;
+            color: black;
+        }
+
+    }
+
+    /* FIN NOSOTROS */
+    /* footer */
+    .footer {
+        @include ajustePantalla(auto, auto);
+        background-color: map-get($colores, colorFooter);
+        color: map-get($colores, textColorF);
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 2px;
+
+        span {
+
+            flex-direction: row;
+            color: white;
+            justify-content: left;
+            margin-left: 0px;
+            padding-top: 0px;
+            margin-right: 0px;
+            font-size: 8px;
+        }
 
         div {
 
-            display: grid;
-            align-items: center;
-            text-align: bottom;
-            height: 100%;
-            padding-top: 10px;
-            justify-content: center;
-
-            padding-top: 50px;
-            margin-bottom: 100%;
-            width: 100%;
-            margin-top: 100px;
-
-            div {
-
-
-                align-items: center;
-                text-align: bottom;
-                height: 100%;
-                padding-top: 10px;
-                justify-content: center;
-                padding-top: 50px;
-                margin-bottom: 100%;
-                width: 100%;
-
-                h3 {
-                    display: flex;
-                    align-items: center;
-                    width: auto;
-                    text-align: center;
-                    justify-content: center;
-                    font-size: 120%;
-                    margin-bottom: 30px;
-                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 20px;
-                }
-            }
-        }
-
-        /* Fin catalogo-main */
-
-        .mb-3 {
-            input {
-                font-size: 40%;
-            }
-        }
-
-        .seccionContacto section {
-            height: 700px;
-            width: 100%;
-        }
-
-        .seccionContacto h2 {
-            font-size: 150%;
-            margin-top: 0%;
-            padding-top: none;
-            padding-bottom: 25px;
-        }
-
-        .seccion_nosotros {
-            height: 1200px;
-            width: 100%;
-        }
-
-        .h4 {
-            font-size: 50%;
-        }
-
-
-        .form-select {
-            display: block;
-            align-items: center;
-            text-align: center;
-            font-size: 60%;
-        }
-
-        .encabezado_menu_item {
-            display: inline-block;
-            border: 1px solid white;
-            padding: 2px;
-            margin: 8px;
-        }
-
-        .productos {
+            margin: 0%;
             display: flex;
-            flex-direction: column;
-            margin: 20px 20px;
-            justify-items: center;
-            align-content: space-between;
-            height: auto;
-        }
-
-        .producto_categorias img {
-            width: 10px;
-            height: 20px;
-            justify-items: left;
-            justify-content: left;
-            margin: 10px;
-            padding: 0%;
-        }
-
-        .producto_categorias h3 {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-
-        .producto_categorias h2 {
-            font-size: 20px;
-            margin: auto;
-        }
-
-        .ajuste_pantalla_nos {
-            height: fit-content;
-            width: 100%;
-        }
-
-        /* ubicacion */
-        .mapa iframe {
-            height: 350px;
-            width: fit-content
-        }
-
-        .seccion_ubicacion {
-            h3 {
-                margin: 10px auto 20px auto;
-                align-items: center;
-                justify-content: center;
-                font-weight: bolder;
-            }
-
-            p {
-                margin: 10px auto 20px auto;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                font-size: 100%;
-                font-weight: bolder;
-            }
-        }
-
-        /* FIN UBICACION */
-
-        /* nosotros */
-        .div_nosotros_chancletas {
-
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 20px;
-            height: 100%;
-
-            h2 {
-                color: black;
-                font-size: 30px;
-            }
-        }
-
-        .div_nosotros {
-
-            font-size: 20px;
-            height: 100%;
-            margin-bottom: 10px;
-            margin-top: 10px;
-
-            h2 {
-                font-size: 30px;
-                color: black;
-            }
-
-        }
-
-        /* FIN NOSOTROS */
-        /* footer */
-        .footer {
-            @include ajustePantalla(auto, auto);
-            background-color: map-get($colores, colorFooter);
-            color: map-get($colores, textColorF);
-            display: flex;
-            list-style: none;
             flex-direction: row;
-            justify-content: space-between;
-            font-size: 2px;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            padding: 0px;
+            width: 100%;
+        }
 
-            span {
+        ul {
+            list-style: none;
+            padding: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 0px;
+            width: 100%;
 
-                flex-direction: row;
-                color: white;
-                justify-content: left;
-                margin-left: 0px;
-                padding-top: 0px;
-                margin-right: 0px;
-                font-size: 8px;
-            }
-
-            div {
-
-                margin: 0%;
-                display: flex;
-                flex-direction: row;
-                align-items: flex-end;
-                justify-content: space-evenly;
-                flex-wrap: nowrap;
+            li {
+                margin-top: 0;
                 padding: 0px;
-                width: 100%;
+                margin-bottom: 0;
+                height: 5%;
+                font-size: 30%;
+                margin-right: 0;
+                margin-left: -8px;
             }
 
-            ul {
-                list-style: none;
-                padding: 5px 0px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                margin: 0px;
-                width: 100%;
-
-                li {
-                    margin-top: 0;
-                    padding: 0px;
-                    margin-bottom: 0;
-                    height: 5%;
-                    font-size: 30%;
-                    margin-right: 0;
-                    margin-left: -8px;
-                }
-
-                h4 {
-                    font-size: 10px;
-                    padding: 0px;
-                    margin: 1px;
-                }
-
-                img {
-                    height: 20px;
-                    width: 20px;
-                }
+            h4 {
+                font-size: 10px;
+                padding: 0px;
+                margin: 1px;
             }
 
-
-            .font_h4 {
-                font-size: 3px;
+            img {
+                height: 20px;
+                width: 20px;
             }
-
-            /* final footer */
         }
     }
+
+.font_h4{
+    font-size: 3px;
+}
+/* final footer */
 }
 
 @media screen and (min-width:768px) and (max-width:1439px) {
@@ -496,17 +479,7 @@
         align-items: center;
     }
 
-    /* fin index */
-    .height_catalogo_secciones {
-        height: fit-content;
-        width: 100%;
-    }
-
-    .titulo_catalogo {
-        margin-top: 20px;
-    }
-
-    /* fin index */
+/* fin index */
 
     .height_catalogo_secciones {
         height: fit-content;
@@ -581,14 +554,14 @@
             width: 100%;
         }
 
-        ul {
-            list-style: none;
-            padding: 5px 0px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin: 0px;
-            width: 100%;
+    ul{
+        list-style: none;
+        padding: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px;
+        width: 100%;
 
             li {
                 margin-top: 0;
