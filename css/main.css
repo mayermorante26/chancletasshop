@@ -529,7 +529,6 @@ body {
     justify-content: center;
     margin-top: 100px; }
     .seccion_categoria div {
-      /* display: grid; */
       align-items: center;
       text-align: bottom;
       height: 100%;
@@ -596,6 +595,9 @@ body {
   .producto_categorias h2 {
     font-size: 20px;
     margin: auto; }
+  .ajuste_pantalla_nos {
+    height: fit-content;
+    width: 100%; }
   /* ubicacion */
   .mapa iframe {
     height: 350px;
@@ -787,6 +789,9 @@ body {
   .mapa iframe {
     height: 450px;
     width: 600px; }
+  .ajuste_pantalla_nos {
+    height: fit-content;
+    width: 100%; }
   /* footer */
   .footer {
     width: auto;
