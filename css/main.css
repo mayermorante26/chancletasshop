@@ -87,7 +87,7 @@ div.row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   border-radius: 0.25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
 .btn:hover {
   align-items: center;
@@ -205,8 +205,7 @@ nav.navbar-expand-lg.navbar-black.bg-black {
 .nav-link:hover {
   color: white; }
 
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: white; }
 
 /* FIN NAVEGADOR */
@@ -324,13 +323,7 @@ body {
   width: 100%;
   height: 575px; }
 
-.container,
-.container-fluid,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
@@ -534,15 +527,8 @@ body {
     grid-template-rows: 200px 200px 200px 200px;
     gap: 100px 0px;
     justify-content: center;
-    margin-top: 100px;
-    /* Fin catalogo-main */
-    /* ubicacion */
-    /* FIN UBICACION */
-    /* nosotros */
-    /* FIN NOSOTROS */
-    /* footer */ }
+    margin-top: 100px; }
     .seccion_categoria div {
-      display: grid;
       align-items: center;
       text-align: bottom;
       height: 100%;
@@ -550,161 +536,157 @@ body {
       justify-content: center;
       padding-top: 50px;
       margin-bottom: 100%;
-      width: 100%;
-      margin-top: 100px; }
-      .seccion_categoria div div {
+      width: 100%; }
+      .seccion_categoria div h3 {
+        display: flex;
         align-items: center;
-        text-align: bottom;
-        height: 100%;
-        padding-top: 10px;
+        width: auto;
+        text-align: center;
         justify-content: center;
-        padding-top: 50px;
-        margin-bottom: 100%;
-        width: 100%; }
-        .seccion_categoria div div h3 {
-          display: flex;
-          align-items: center;
-          width: auto;
-          text-align: center;
-          justify-content: center;
-          font-size: 120%;
-          margin-bottom: 30px;
-          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 20px; }
-    .seccion_categoria .mb-3 input {
-      font-size: 40%; }
-    .seccion_categoria .seccionContacto section {
-      height: 700px;
-      width: 100%; }
-    .seccion_categoria .seccionContacto h2 {
-      font-size: 150%;
-      margin-top: 0%;
-      padding-top: none;
-      padding-bottom: 25px; }
-    .seccion_categoria .seccion_nosotros {
-      height: 1200px;
-      width: 100%; }
-    .seccion_categoria .h4 {
-      font-size: 50%; }
-    .seccion_categoria .form-select {
-      display: block;
-      align-items: center;
-      text-align: center;
-      font-size: 60%; }
-    .seccion_categoria .encabezado_menu_item {
-      display: inline-block;
-      border: 1px solid white;
-      padding: 2px;
-      margin: 8px; }
-    .seccion_categoria .productos {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 20px;
-      justify-items: center;
-      align-content: space-between;
-      height: auto; }
-    .seccion_categoria .producto_categorias img {
-      width: 10px;
-      height: 20px;
-      justify-items: left;
-      justify-content: left;
-      margin: 10px;
-      padding: 0%; }
-    .seccion_categoria .producto_categorias h3 {
-      font-size: 20px;
-      margin-bottom: 30px; }
-    .seccion_categoria .producto_categorias h2 {
-      font-size: 20px;
-      margin: auto; }
-    .seccion_categoria .ajuste_pantalla_nos {
-      height: fit-content;
-      width: 100%; }
-    .seccion_categoria .mapa iframe {
-      height: 350px;
-      width: fit-content; }
-    .seccion_categoria .seccion_ubicacion h3 {
-      margin: 10px auto 20px auto;
-      align-items: center;
-      justify-content: center;
-      font-weight: bolder; }
-    .seccion_categoria .seccion_ubicacion p {
-      margin: 10px auto 20px auto;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      font-size: 100%;
-      font-weight: bolder; }
-    .seccion_categoria .div_nosotros_chancletas {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 20px;
-      height: 100%; }
-      .seccion_categoria .div_nosotros_chancletas h2 {
-        color: black;
-        font-size: 30px; }
-    .seccion_categoria .div_nosotros {
-      font-size: 20px;
-      height: 100%;
-      margin-bottom: 10px;
-      margin-top: 10px; }
-      .seccion_categoria .div_nosotros h2 {
-        font-size: 30px;
-        color: black; }
-    .seccion_categoria .footer {
-      width: auto;
-      height: auto;
-      background-color: black;
-      color: white;
-      display: flex;
-      list-style: none;
+        font-size: 120%;
+        margin-bottom: 30px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; }
+  /* Fin catalogo-main */
+  .mb-3 input {
+    font-size: 40%; }
+  .seccionContacto section {
+    height: 700px;
+    width: 100%; }
+  .seccionContacto h2 {
+    font-size: 150%;
+    margin-top: 0%;
+    padding-top: none;
+    padding-bottom: 25px; }
+  .seccion_nosotros {
+    height: 1200px;
+    width: 100%; }
+  .h4 {
+    font-size: 50%; }
+  .form-select {
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 60%; }
+  .encabezado_menu_item {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 2px;
+    margin: 8px; }
+  .productos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    justify-items: center;
+    align-content: space-between;
+    height: auto; }
+  .producto_categorias img {
+    width: 10px;
+    height: 20px;
+    justify-items: left;
+    justify-content: left;
+    margin: 10px;
+    padding: 0%; }
+  .producto_categorias h3 {
+    font-size: 20px;
+    margin-bottom: 30px; }
+  .producto_categorias h2 {
+    font-size: 20px;
+    margin: auto; }
+  .ajuste_pantalla_nos {
+    height: fit-content;
+    width: 100%; }
+  /* ubicacion */
+  .mapa iframe {
+    height: 350px;
+    width: fit-content; }
+  .seccion_ubicacion h3 {
+    margin: 10px auto 20px auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder; }
+  .seccion_ubicacion p {
+    margin: 10px auto 20px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    font-weight: bolder; }
+  /* FIN UBICACION */
+  /* nosotros */
+  .div_nosotros_chancletas {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    height: 100%; }
+    .div_nosotros_chancletas h2 {
+      color: black;
+      font-size: 30px; }
+  .div_nosotros {
+    font-size: 20px;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+    .div_nosotros h2 {
+      font-size: 30px;
+      color: black; }
+  /* FIN NOSOTROS */
+  /* footer */
+  .footer {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2px; }
+    .footer span {
       flex-direction: row;
-      justify-content: space-between;
-      font-size: 2px;
-      /* final footer */ }
-      .seccion_categoria .footer span {
-        flex-direction: row;
-        color: white;
-        justify-content: left;
-        margin-left: 0px;
-        padding-top: 0px;
-        margin-right: 0px;
-        font-size: 8px; }
-      .seccion_categoria .footer div {
-        margin: 0%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
+      color: white;
+      justify-content: left;
+      margin-left: 0px;
+      padding-top: 0px;
+      margin-right: 0px;
+      font-size: 8px; }
+    .footer div {
+      margin: 0%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      padding: 0px;
+      width: 100%; }
+    .footer ul {
+      list-style: none;
+      padding: 5px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0px;
+      width: 100%; }
+      .footer ul li {
+        margin-top: 0;
         padding: 0px;
-        width: 100%; }
-      .seccion_categoria .footer ul {
-        list-style: none;
-        padding: 5px 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 0px;
-        width: 100%; }
-        .seccion_categoria .footer ul li {
-          margin-top: 0;
-          padding: 0px;
-          margin-bottom: 0;
-          height: 5%;
-          font-size: 30%;
-          margin-right: 0;
-          margin-left: -8px; }
-        .seccion_categoria .footer ul h4 {
-          font-size: 10px;
-          padding: 0px;
-          margin: 1px; }
-        .seccion_categoria .footer ul img {
-          height: 20px;
-          width: 20px; }
-      .seccion_categoria .footer .font_h4 {
-        font-size: 3px; } }
+        margin-bottom: 0;
+        height: 5%;
+        font-size: 30%;
+        margin-right: 0;
+        margin-left: -8px; }
+      .footer ul h4 {
+        font-size: 10px;
+        padding: 0px;
+        margin: 1px; }
+      .footer ul img {
+        height: 20px;
+        width: 20px; }
+  .font_h4 {
+    font-size: 3px; }
+  /* final footer */ }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   /* header nav */
@@ -788,12 +770,6 @@ body {
     width: 100%; }
   .titulo_catalogo {
     margin-top: 20px; }
-  /* fin index */
-  .height_catalogo_secciones {
-    height: fit-content;
-    width: 100%; }
-  .titulo_catalogo {
-    margin-top: 20px; }
   .seccion_categoria {
     width: 100%;
     height: fit-content;
@@ -868,4 +844,5 @@ body {
         height: 20px;
         width: 20px; }
   .font_h4 {
-    font-size: 3px; } }
+    font-size: 3px; }
+  /* FIN FOOTER */ }

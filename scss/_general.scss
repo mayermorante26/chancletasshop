@@ -1,8 +1,7 @@
-.logo_nav {
+.logo_nav{
     height: 80px;
 }
-
-header {
+header{
     height: 100px;
 }
 
@@ -17,39 +16,35 @@ nav.navbar-expand-lg.navbar-black.bg-black {
     padding-bottom: 0.5rem;
     height: -webkit-fill-available;
 }
-
-.navbar>.container-fluid {
+.navbar>.container-fluid{
     @include displayAlign(flex, center);
     flex-wrap: inherit;
     justify-content: space-between;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link{
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-}
+}  
 
-.nav-link {
+.nav-link{
     border: 1px solid white;
     margin: 15px;
     padding: 5px 12px;
     border-radius: 20px;
 }
 
-.dropdown-menu {
+.dropdown-menu{
     background-color: black;
-
-    a {
-        color: white;
-    }
+        a{
+            color: white;
+        }
 }
-
-.nav-item a {
+.nav-item a{
     color: white;
     text-decoration: none;
 }
-
 .navbar navbar-expand-lg {
     width: 100%;
 }
@@ -59,21 +54,17 @@ nav.navbar-expand-lg.navbar-black.bg-black {
     flex-grow: initial;
     align-items: center;
 }
-
 .nav-link:hover {
     color: white;
 }
-
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
     color: white;
 }
-
 /* FIN NAVEGADOR */
 
-/* BODY */
+ /* BODY */
 
-main {
+main{
     background: map-get($colores, colorBody);
     height: fit-content;
 }
@@ -83,55 +74,53 @@ section {
     justify-items: center;
     align-content: center;
 }
-
 /* FIN BODY */
 
 /* FOOTER */
-footer {
-    @include ajustePantalla(100%, auto);
-    background-color: map-get($colores, colorFooter);
-    color: map-get($colores, textColorF);
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 100%;
-
-    span {
-        flex-direction: row;
-        color: white;
-        justify-content: left;
-        margin-left: 0px;
-        padding-top: 0px;
-        margin-right: 0px;
-    }
-
-    div {
-        margin-left: 0%;
+footer{
+        @include ajustePantalla(100%, auto);
+        background-color: map-get($colores, colorFooter);
+        color: map-get($colores, textColorF);
         display: flex;
+        list-style: none;   
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: nowrap;
-    }
+        font-size: 100%;
 
-    ul {
-        list-style: none;
-        padding: 0px 16px 0 16px;
-        margin-top: 5px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        li {
-            margin-top: 0;
-            padding: 0px 16px 0px 16px;
-            margin-bottom: 0;
+    span{
+            flex-direction: row;
+            color: white;
+            justify-content: left;
+            margin-left: 0px;
+            padding-top: 0px;
+            margin-right: 0px;
         }
 
-        h4 {
-            font-size: 15px;
+    div{
+            margin-left: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
         }
-    }
+
+    ul{
+            list-style: none;
+            padding: 0px 16px 0 16px;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            li{
+                margin-top: 0;
+                padding: 0px 16px 0px 16px;
+                margin-bottom: 0;
+            }
+
+            h4{
+                font-size: 15px; 
+            }
+        }        
 }
-
 /* FIN FOOTER */
