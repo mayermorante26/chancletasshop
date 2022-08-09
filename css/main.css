@@ -542,7 +542,7 @@ body {
     /* FIN NOSOTROS */
     /* footer */ }
     .seccion_categoria div {
-      /* display: grid; */
+      display: grid;
       align-items: center;
       text-align: bottom;
       height: 100%;
@@ -868,5 +868,4 @@ body {
         height: 20px;
         width: 20px; }
   .font_h4 {
-    font-size: 3px; }
-  /* FIN FOOTER */ }
+    font-size: 3px; } }
