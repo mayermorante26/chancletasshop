@@ -1,6 +1,7 @@
 .ajuste_pantalla_nos {
 
-    @include ajustePantalla(100%, fit-content);
+   @include ajustePantalla(100%, 620px);
+
     margin-left: 0px;
     margin-right: auto;
     margin-bottom: 0;
