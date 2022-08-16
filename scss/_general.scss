@@ -73,9 +73,13 @@ nav.navbar-expand-lg.navbar-black.bg-black {
 
 /* BODY */
 
+.body {
+    height: 86vh;
+}
+
 main {
     background: map-get($colores, colorBody);
-    height: fit-content;
+    height:-webkit-fill-available;
 }
 
 section {
