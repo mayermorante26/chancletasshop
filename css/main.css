@@ -1,7 +1,7 @@
 /* Mixin */
 .ajuste_pantalla {
   width: 100%;
-  height: 720px; }
+  height: 100vh; }
 
 /* INICIO BODY */
 .bienvenidos {
@@ -211,8 +211,8 @@ nav.navbar-expand-lg.navbar-black.bg-black {
 
 /* FIN NAVEGADOR */
 /* BODY */
-body {
-  height: 86vh; }
+.body {
+  height: 100vh; }
 
 main {
   background: linear-gradient(white, #dc6413, #da3939);
@@ -266,7 +266,7 @@ footer {
 /* FIN FOOTER */
 .ajuste_pantalla_nos {
   width: 100%;
-  height: 620px;
+  height: 100vh;
   margin-left: 0px;
   margin-right: auto;
   margin-bottom: 0;
@@ -289,7 +289,8 @@ body {
   font-size: 20px;
   height: 100%; }
   .div_nosotros_chancletas h2 {
-    color: white; }
+    color: white;
+    margin: 1em; }
   .div_nosotros_chancletas p {
     animation-duration: 2s;
     animation-name: animacion_nosotros; }
@@ -301,7 +302,8 @@ body {
   margin-bottom: 5px; }
   .div_nosotros h2 {
     font-size: 30px;
-    color: white; }
+    color: white;
+    margin: 1em; }
 
 .nosotros h2 {
   color: white; }
@@ -345,7 +347,7 @@ body {
 
 .seccionContacto section {
   width: 100%;
-  height: 605px; }
+  height: 86vh; }
 
 .seccionContacto h2 {
   font-size: 40px; }
@@ -368,7 +370,7 @@ body {
 
 .seccion_Ubicacion {
   width: 100%;
-  height: 630px;
+  height: 90vh;
   margin-top: 30px;
   margin-bottom: 0px;
   padding-bottom: 2px; }
@@ -627,7 +629,7 @@ body {
     font-size: 100%;
     font-weight: bolder; }
   .seccion_Ubicacion {
-    height: fit-content;
+    height: 100%;
     width: 100%; }
   /* FIN UBICACION */
   /* nosotros */
@@ -753,15 +755,27 @@ body {
   /* fin header-nav */
   .ajuste_pantalla {
     width: 100%;
-    height: fit-content; }
+    height: 72em; }
   .ajuste_pantalla_catalogo {
     width: 100%;
-    height: fit-content; }
+    height: 72em; }
   .seccion_Ubicacion {
     height: 100%;
     width: 100%; }
+  .seccionContacto {
+    height: 110vh;
+    width: 100%; }
   /* index */
-  section.productos_container {
+  .container {
+    max-width: 100%; }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    justify-content: center; }
+  .section.productos_container {
     display: grid;
     align-items: center;
     height: auto;
@@ -809,7 +823,7 @@ body {
     height: 450px;
     width: 600px; }
   .ajuste_pantalla_nos {
-    height: 100%;
+    height: 62em;
     width: 100%; }
   .btn {
     margin: 10px; }

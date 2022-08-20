@@ -1,5 +1,5 @@
 .ajuste_pantalla {
-    @include ajustePantalla(100%, 720px);
+    @include ajustePantalla(100%, 100vh);
 }
 
 /* INICIO BODY */

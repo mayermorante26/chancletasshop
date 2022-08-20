@@ -1,6 +1,6 @@
 .ajuste_pantalla_nos {
 
-   @include ajustePantalla(100%, 620px);
+   @include ajustePantalla(100%, 100vh);
 
     margin-left: 0px;
     margin-right: auto;
@@ -28,6 +28,7 @@ body {
 
     h2 {
         color: white;
+        margin: 1em;
     }
 
     p {
@@ -47,6 +48,7 @@ body {
     h2 {
         font-size: 30px;
         color: white;
+        margin: 1em;
     }
 }
 
